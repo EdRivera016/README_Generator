@@ -20,7 +20,7 @@ return "";
 // // If there is no license, return an empty string
 function renderLicenseSection(license) {
 if (license !== "none") {
-  return `## License/n This project is license under the [${license}](https://choosealicense.com/licenses/${license}/) license.`;
+  return `## This project is license under the [${license}](https://choosealicense.com/licenses/${license}/) license.`;
 }
 return "";
 }
