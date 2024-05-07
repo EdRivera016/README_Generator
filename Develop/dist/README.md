@@ -1,13 +1,16 @@
 # Readme Generator
 ![Github license](https://img.shields.io/badge/license-MIT-blue.svg)
+[License](https://choosealicense.com/licenses/MIT/)
+## License/nThis project is license under the [MIT](https://choosealicense.com/licenses/MIT/) license.
 ## Description
-A README generator to create an efficient and professional README file.
+A command line README generator to create an efficient and professional README file.
 ## Deployed Applicaton URL
-https://github.com/EdRivera016/README_Generator
+N/A
 ## Screenshot
-![alt-text](N/A)
+![alt-text]![alt text](../utils/img/code-screenshot.png)
 ## Table of Contents
 - [Readme Generator](#readme-generator)
+  - [License/nThis project is license under the MIT license.](#licensenthis-project-is-license-under-the-mit-license)
   - [Description](#description)
   - [Deployed Applicaton URL](#deployed-applicaton-url)
   - [Screenshot](#screenshot)
@@ -19,14 +22,15 @@ https://github.com/EdRivera016/README_Generator
   - [Testing](#testing)
   - [Questions](#questions)
 ## Features
-Different questions to create a README file
+Question on command line to gather info to build file.
 ## Languages and Dependecies
-Inquirer: 8.2.4
+inquirer 8.2.4
 ## How to use this application:
-Javascript, JSON, NODE.JS
+JAvascript, JSON, NODE.JS, Markdown
 ## Contributions
 undefined
 ## Testing
-NPM testing
+NPM test(testing)
 ## Questions
 Pleasae send any questions you may have [here](mailto:edwinrivera016@outlook.com?subject=[Github]%20Dev%20Connect) or visit [github/EdRivera016](https://github.comEdRivera016).
+

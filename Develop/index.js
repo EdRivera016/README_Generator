@@ -29,12 +29,6 @@ const questions = [
       "Please provide a URL where a user can access your deployed application.",
   },
   {
-    type: "checkbox",
-    name: "license",
-    message: "Please select a license applicable to this project.",
-    choices: ["MIT", "APACHE2.0", "Boost1.0", "MPL2.0","OSL-3.0","Unlicense", "None"],
-  },
-  {
     type: "input",
     name: "features",
     message: "List some features for this project.",
@@ -70,6 +64,20 @@ const questions = [
     name: "test",
     message: "Provide walkthrough of required tests if applicable.",
   },
+  {
+    type: "checkbox",
+    name: "license",
+    message: "Please select a license applicable to this project.",
+    choices: [
+      "MIT",
+      "APACHE2.0",
+      "Boost1.0",
+      "MPL2.0",
+      "OSL-3.0",
+      "Unlicense",
+      "None",
+    ],
+  },
 ];
 
 // TODO: Create a function to write README file
@@ -89,7 +97,7 @@ function writeToFile(fileName, data) {
 function init() {
   inquirer.prompt(questions).then((responses) => {
     console.log("Creating README.md File...");
-    writeToFile("./dist/README.md", generateMarkdown({ ...responses }))
+    writeToFile("./README.md", generateMarkdown({ ...responses }))
       .then((message) => {
         console.log(message);
       })
