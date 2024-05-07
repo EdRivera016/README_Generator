@@ -27,13 +27,24 @@ ${data.link}
 ![alt-text](${data.screenshot})
 ## Table of Contents
 * [Features](#features)
-* []()
-*
-*
-*
-*
-*
-*
+* [Languages & Dependecies](#languagesanddependecies)
+* [How to use this application](#Howtousethisapplication)
+* [Contributions](#contributions)
+* [Tests](#tests)
+* [Questions](#questions)
+## Features
+${data.features}
+## Languages and Dependecies
+${data.require}
+## How to use this application:
+${data.usage}
+## Contributions
+${data.contributions}
+## Testing
+${data.test}
+## Questions
+Pleasae send any questions you may have [here](mailto:${data.email}?subject=[Github]%20Dev%20Connect) or visit [github/${data.creator}](https://github.com${data.creator}).
+
 `;
 }
 

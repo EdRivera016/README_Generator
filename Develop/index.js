@@ -13,11 +13,6 @@ const questions = [
   },
   {
     type: "input",
-    name: "motivation",
-    message: "What was your motivation?",
-  },
-  {
-    type: "input",
     name: "description",
     message: "Please describe the purpose and funcitonality of this project.",
   },
@@ -31,7 +26,7 @@ const questions = [
     type: "input",
     name: "link",
     message:
-      "Please providee a URL where a user can access your deployed application.",
+      "Please provide a URL where a user can access your deployed application.",
   },
   {
     type: "checkbox",
@@ -52,7 +47,7 @@ const questions = [
   {
     type: "input",
     name: "usage",
-    message: "State the languages or technologies used for this project.",
+    message: "What were the languages or technologies used for this project.",
   },
   {
     type: "input",
@@ -78,42 +73,42 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-  return new Promise((resolve, reject) => {
-    fs.writeFile(path.join(process.cwd(), fileName), data, (err) => {
-      if (err) {
-        reject(err);
-      } else {
-        resolve("File written successfully!");
-      }
-    });
-  });
-}
-
 // function writeToFile(fileName, data) {
-//     return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+//   return new Promise((resolve, reject) => {
+//     fs.writeFile(path.join(process.cwd(), fileName), data, (err) => {
+//       if (err) {
+//         reject(err);
+//       } else {
+//         resolve("File written successfully!");
+//       }
+//     });
+//   });
 // }
+
+function writeToFile(fileName, data) {
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+}
 
 // TODO: Create a function to initialize app
-function init() {
-  inquirer.prompt(questions).then((responses) => {
-    console.log("Creating README.md File...");
-    writeToFile("./README.md", generateMarkdown({ ...responses }))
-      .then((message) => {
-        console.log(message);
-      })
-      .catch((error) => {
-        console.error("Error writing file:", error);
-      });
-  });
-}
-
 // function init() {
-//     inquirer.prompt(questions).then((responses) => {
-//         console.log("Creating README.md File...");
-//         writeToFile("./README.md", generateMarkdown({ ...responses }));
-//     });
+//   inquirer.prompt(questions).then((responses) => {
+//     console.log("Creating README.md File...");
+//     writeToFile("./README.md", generateMarkdown({ ...responses }))
+//       .then((message) => {
+//         console.log(message);
+//       })
+//       .catch((error) => {
+//         console.error("Error writing file:", error);
+//       });
+//   });
 // }
+
+function init() {
+    inquirer.prompt(questions).then((responses) => {
+        console.log("Creating README.md File...");
+        writeToFile("./dist/README.md", generateMarkdown({ ...responses }));
+    });
+}
 
 // Function call to initialize app
 init();
