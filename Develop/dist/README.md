@@ -7,12 +7,17 @@ https://github.com/EdRivera016/README_Generator
 ## Screenshot
 ![alt-text](N/A)
 ## Table of Contents
-* [Features](#features)
-* [Languages & Dependecies](#languagesanddependecies)
-* [How to use this application](#Howtousethisapplication)
-* [Contributions](#contributions)
-* [Tests](#tests)
-* [Questions](#questions)
+- [Readme Generator](#readme-generator)
+  - [Description](#description)
+  - [Deployed Applicaton URL](#deployed-applicaton-url)
+  - [Screenshot](#screenshot)
+  - [Table of Contents](#table-of-contents)
+  - [Features](#features)
+  - [Languages and Dependecies](#languages-and-dependecies)
+  - [How to use this application:](#how-to-use-this-application)
+  - [Contributions](#contributions)
+  - [Testing](#testing)
+  - [Questions](#questions)
 ## Features
 Different questions to create a README file
 ## Languages and Dependecies
@@ -25,4 +30,3 @@ undefined
 NPM testing
 ## Questions
 Pleasae send any questions you may have [here](mailto:edwinrivera016@outlook.com?subject=[Github]%20Dev%20Connect) or visit [github/EdRivera016](https://github.comEdRivera016).
-

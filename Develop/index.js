@@ -32,7 +32,7 @@ const questions = [
     type: "checkbox",
     name: "license",
     message: "Please select a license applicable to this project.",
-    choices: ["MIT", "APACHE2.0", "Boost1.0", "MPL2.0", "None"],
+    choices: ["MIT", "APACHE2.0", "Boost1.0", "MPL2.0","OSL-3.0","Unlicense", "None"],
   },
   {
     type: "input",
@@ -73,41 +73,30 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {
-//   return new Promise((resolve, reject) => {
-//     fs.writeFile(path.join(process.cwd(), fileName), data, (err) => {
-//       if (err) {
-//         reject(err);
-//       } else {
-//         resolve("File written successfully!");
-//       }
-//     });
-//   });
-// }
-
 function writeToFile(fileName, data) {
-    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+  return new Promise((resolve, reject) => {
+    fs.writeFile(path.join(process.cwd(), fileName), data, (err) => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve("File written successfully!");
+      }
+    });
+  });
 }
 
 // TODO: Create a function to initialize app
-// function init() {
-//   inquirer.prompt(questions).then((responses) => {
-//     console.log("Creating README.md File...");
-//     writeToFile("./README.md", generateMarkdown({ ...responses }))
-//       .then((message) => {
-//         console.log(message);
-//       })
-//       .catch((error) => {
-//         console.error("Error writing file:", error);
-//       });
-//   });
-// }
-
 function init() {
-    inquirer.prompt(questions).then((responses) => {
-        console.log("Creating README.md File...");
-        writeToFile("./dist/README.md", generateMarkdown({ ...responses }));
-    });
+  inquirer.prompt(questions).then((responses) => {
+    console.log("Creating README.md File...");
+    writeToFile("./dist/README.md", generateMarkdown({ ...responses }))
+      .then((message) => {
+        console.log(message);
+      })
+      .catch((error) => {
+        console.error("Error writing file:", error);
+      });
+  });
 }
 
 // Function call to initialize app
