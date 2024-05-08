@@ -55,7 +55,7 @@ ${data.contributions}
 ## Testing
 ${data.test}
 ## Questions
-Pleasae send any questions you may have [here](mailto:${data.email}?subject=[Github]%20Dev%20Connect) or visit [github/${data.creator}](https://github.com${data.creator}).
+Please send any questions you may have [here](mailto:${data.email}?subject=[Github]%20Dev%20Connect) or visit [github.com/${data.creator}](https://github.com${data.creator}).
 
 `;
 }

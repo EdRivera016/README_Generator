@@ -44,9 +44,13 @@ WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 ```
 ## Deployed Applicaton URL
-N/A
+https://github.com/EdRivera016/README_Generator
+
+## Demo
+[Walkthrough Demo](https://drive.google.com/file/d/15V3GxLqCOwViYDc_caOayl9HftDlwWp3/view)
+
 ## Screenshot
-![alt-text]((../utils/img/code-screenshot.png))
+N/A
 ## Table of Contents
 - [README Generator](#readme-generator)
   - [This project is license under the MIT license.](#this-project-is-license-under-the-mit-license)
@@ -54,6 +58,7 @@ N/A
   - [User Story](#user-story)
   - [Acceptance Criteria](#acceptance-criteria)
   - [Deployed Applicaton URL](#deployed-applicaton-url)
+  - [Demo](#demo)
   - [Screenshot](#screenshot)
   - [Table of Contents](#table-of-contents)
   - [Features](#features)
