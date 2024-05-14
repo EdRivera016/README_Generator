@@ -73,5 +73,5 @@ NODE.JS, Inquirer Package, File System Module(fs), Path Module
 First, Git clone the repository and run npm init -y, also install npm inquirer@8.2.4 once thats done, cd into the current directory(README_Generator) then into the Develop folder and in the terminal type node index.js to start application. When finished go into the dist folder where you will find your newly created README.md file.
 
 ## Questions
-Pleasae send any questions you may have [here](mailto:edwinrivera016@outlook.com?subject=[Github]%20Dev%20Connect) or visit [github/EdRivera016](https://github.comEdRivera016).
+Please send any questions you may have [here](mailto:edwinrivera016@outlook.com?subject=[Github]%20Dev%20Connect) or visit [github/EdRivera016](https://github.comEdRivera016).
 
