@@ -64,19 +64,14 @@ N/A
   - [Features](#features)
   - [Languages and Dependecies](#languages-and-dependecies)
   - [How to use this application:](#how-to-use-this-application)
-  - [Contributions](#contributions)
-  - [Testing](#testing)
   - [Questions](#questions)
 ## Features
 List of features on this project are: User input handling, License handling, Markdown generation, File writing, Initialization and a Professional README creation. The project aims to help users create a professional README.md file for their projects by ptoviding a structured template and guiding them through the input proces. These features work together to streamline the process of creating a comprehensive and informative README file for projects ensuring that essential project details are captured and presented effectively.
 ## Languages and Dependecies
-Inquirer@8.2.4, fs(File System) and path.
-## How to use this application:
 NODE.JS, Inquirer Package, File System Module(fs), Path Module
-## Contributions
-undefined
-## Testing
+## How to use this application:
 First, Git clone the repository and run npm init -y, also install npm inquirer@8.2.4 once thats done, cd into the current directory(README_Generator) then into the Develop folder and in the terminal type node index.js to start application. When finished go into the dist folder where you will find your newly created README.md file.
+
 ## Questions
 Pleasae send any questions you may have [here](mailto:edwinrivera016@outlook.com?subject=[Github]%20Dev%20Connect) or visit [github/EdRivera016](https://github.comEdRivera016).
 
